@@ -1,0 +1,83 @@
+000: 0734 -- Jump to address 52
+001: 0025 -- Begining of the Data 
+002: 005a 
+003: 0030 
+004: 0022 
+005: 000d
+006: 002c 
+007: 000a 
+008: 0040
+009: 000d 
+010: 004d 
+011: 0020
+012: 0042
+013: 0013
+014: 0049
+015: 0009 
+016: 0049
+017: 0054
+018: 0031
+019: 003d
+020: 0007
+021: 0024
+022: 0035
+023: 0003
+024: 000a
+025: 002a
+026: 0030
+027: 0014
+028: 001c 
+029: 002b 
+030: 0058
+031: 0003
+032: 0028 
+033: 0057
+034: 0040
+035: 0004
+036: 0046
+037: 003c
+038: 005d
+039: 003f
+040: 005f 
+041: 0008 
+042: 001b 
+043: 0063
+044: 0033
+045: 0045
+046: 005c
+047: 0036
+048: 0042
+049: 003a
+050: 0042
+051: 0001 --End of the Data
+052: 060f -- WP=0 
+053: f001 -- R0_low = address of the first input
+054: f100 -- R0_high is set to zero 
+055: f450 -- R1_low = address of output results 80
+056: f500 -- R1_high is set to zero 
+057: 0a08 -- Add WP by 8 to point to different registers
+058: f001 -- R0_low = address of the first input
+059: f100 -- R0_high is set to zero 
+060: f432 -- R1_low = address of 50
+061: f500 -- R1_high is set to zero (as the first destination)
+062: f801 -- R2_low = 1
+063: f900 -- R2_high=0 
+064: 060f -- WP=0
+065: 280f -- R2 = A[i]
+066: fc01 -- R3_low = 1
+067: fd00 -- R3_high = 0
+068: b30f -- R0++ 
+069: b70f -- R1++ Store address increments
+070: 2c0f -- R3 = A[i+1]
+071: bb0f -- R2<--R2+R3
+072: 360f -- Storing the result 
+073: 0a08 -- Wp=8
+074: e90f -- Comparing the current address with address of the last array
+075: 084f -- Jump 3_steps
+076: b80f -- R2<--R2+R0 incrementing the current address
+077: fc40 -- R3_low= address of starting the loop
+078: fd00 -- R3_high=0
+079: ff00-- Jump to address of starting the loop
+080: 010f -- Stop
+
+
