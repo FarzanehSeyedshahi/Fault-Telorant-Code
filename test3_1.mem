@@ -1,0 +1,25 @@
+# PLI_Start
+# SayehTest.U1
+# Net name is: SayehTest.U1.Rd_on_AddressUnitRSide
+# Net value is: 0
+# New Net value is: 1
+# Net name is: SayehTest.U1.IR_on_HOpndBus
+# Net value is: 0
+# New Net value is: 1
+# Net name is: SayehTest.U1.RFLwrite
+# Net value is: 0
+# New Net value is: 1
+# Net name is: SayehTest.U1.AorB
+# Net value is: 0
+# New Net value is: 1
+# Net name is: SayehTest.U1.WriteIO
+# Net value is: 0
+# New Net value is: 1
+
+// memory data file (do not edit the following line - required for mem load use)
+// instance=/SayehTest/memory/SayehRAM
+// format=mti addressradix=h dataradix=h version=1.0 wordsperline=15
+51: xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
+60: xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
+6f: xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
+7e: xxxx xxxx xxxx xxxx xxxx xxxx 
